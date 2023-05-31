@@ -9,10 +9,11 @@
 /* Begin PBXBuildFile section */
 		1D1346C92A20C53C007FF15C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D1346C82A20C53C007FF15C /* AppDelegate.swift */; };
 		1D1346CB2A20C53C007FF15C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D1346CA2A20C53C007FF15C /* SceneDelegate.swift */; };
-		1D1346CD2A20C53C007FF15C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D1346CC2A20C53C007FF15C /* ViewController.swift */; };
+		1D1346CD2A20C53C007FF15C /* QuestionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D1346CC2A20C53C007FF15C /* QuestionsViewController.swift */; };
 		1D1346D02A20C53C007FF15C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D1346CE2A20C53C007FF15C /* Main.storyboard */; };
 		1D1346D22A20C53D007FF15C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D1346D12A20C53D007FF15C /* Assets.xcassets */; };
 		1D1346D52A20C53D007FF15C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D1346D32A20C53D007FF15C /* LaunchScreen.storyboard */; };
+		1D2763442A2624AE008C8285 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D2763432A2624AE008C8285 /* ResultViewController.swift */; };
 		1D72E0342A21FCDC00C04FE1 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D72E0332A21FCDC00C04FE1 /* Question.swift */; };
 /* End PBXBuildFile section */
 
@@ -20,11 +21,12 @@
 		1D1346C52A20C53C007FF15C /* PersonalQuiz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PersonalQuiz.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D1346C82A20C53C007FF15C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1D1346CA2A20C53C007FF15C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		1D1346CC2A20C53C007FF15C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1D1346CC2A20C53C007FF15C /* QuestionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionsViewController.swift; sourceTree = "<group>"; };
 		1D1346CF2A20C53C007FF15C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1D1346D12A20C53D007FF15C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1D1346D42A20C53D007FF15C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1D1346D62A20C53D007FF15C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1D2763432A2624AE008C8285 /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
 		1D72E0332A21FCDC00C04FE1 /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -80,7 +82,8 @@
 		1D1346DD2A20F037007FF15C /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				1D1346CC2A20C53C007FF15C /* ViewController.swift */,
+				1D1346CC2A20C53C007FF15C /* QuestionsViewController.swift */,
+				1D2763432A2624AE008C8285 /* ResultViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -173,7 +176,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1D1346CD2A20C53C007FF15C /* ViewController.swift in Sources */,
+				1D2763442A2624AE008C8285 /* ResultViewController.swift in Sources */,
+				1D1346CD2A20C53C007FF15C /* QuestionsViewController.swift in Sources */,
 				1D72E0342A21FCDC00C04FE1 /* Question.swift in Sources */,
 				1D1346C92A20C53C007FF15C /* AppDelegate.swift in Sources */,
 				1D1346CB2A20C53C007FF15C /* SceneDelegate.swift in Sources */,
