@@ -261,13 +261,7 @@
                             <constraint firstItem="bTd-zl-iWI" firstAttribute="centerY" secondItem="z7r-LL-uiy" secondAttribute="centerY" id="ykx-2D-s5s"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Вопрос №" id="tI6-Qb-uVH">
-                        <barButtonItem key="rightBarButtonItem" title="Item" id="hwb-dt-BUh">
-                            <connections>
-                                <segue destination="0r6-b0-Dev" kind="show" id="f1a-hI-WtI"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" title="Вопрос №" id="tI6-Qb-uVH"/>
                     <connections>
                         <outlet property="multipleStackView" destination="bTd-zl-iWI" id="EIr-uN-fTC"/>
                         <outlet property="questionLabel" destination="aNE-Uz-1fj" id="2qo-m7-eM5"/>
@@ -330,7 +324,13 @@
                             <constraint firstItem="BgL-Ii-sCz" firstAttribute="leading" secondItem="2x1-lu-SPa" secondAttribute="leading" constant="16" id="PeC-lP-3Oo"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Результат" id="TUO-kw-qhr"/>
+                    <navigationItem key="navigationItem" title="Результат" id="TUO-kw-qhr">
+                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="s2D-Y7-Jma">
+                            <connections>
+                                <action selector="doneButtonPressed:" destination="0r6-b0-Dev" id="VcJ-Qo-11h"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ic9-cv-zwu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -342,7 +342,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="p1v-s4-bsT" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="etQ-27-NJZ">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="98.5"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="92.5"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -355,9 +355,6 @@
             <point key="canvasLocation" x="1010.625" y="-27.464788732394368"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="f1a-hI-WtI"/>
-    </inferredMetricsTieBreakers>
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
