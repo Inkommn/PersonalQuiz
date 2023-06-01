@@ -331,6 +331,10 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="resultEmodjiLabel" destination="LT5-3d-6a6" id="TfZ-z7-Hpj"/>
+                        <outlet property="resultLabel" destination="ukq-se-udE" id="qhI-Ex-J6c"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ic9-cv-zwu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
