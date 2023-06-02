@@ -20,7 +20,7 @@ final class ResultViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         hideBackButton()
-        getMostCommonAnswer()
+        getMostCommonAnimal()
     }
     
     // MARK: - IBActions
@@ -28,12 +28,12 @@ final class ResultViewController: UIViewController {
         navigationController?.dismiss(animated: true)
     }
     
-    // MARK: - Private properties
+    // MARK: - Private methods
     private func hideBackButton() {
         navigationItem.hidesBackButton = true
     }
 
-    private func getMostCommonAnswer() {
+    private func getMostCommonAnimal() {
         var animalCount: [Animal: Int] = [:]
         
         answers.forEach { answer in
@@ -44,19 +44,11 @@ final class ResultViewController: UIViewController {
             }
         }
         
-        var maxCount = 0
-        var mostCommonAnimal: Animal?
-     
-        for(animal, count) in animalCount {
-            if count > maxCount {
-                maxCount = count
-                mostCommonAnimal = animal
-            }
-        }
-        if let animal = mostCommonAnimal {
+        let sortedAnimalCount = animalCount.sorted { $0.value > $1.value }
+
+        if let animal = sortedAnimalCount.first?.key {
             resultEmodjiLabel.text = ("Вы - \(animal.rawValue)")
             resultLabel.text = animal.definition
         }
     }
-    
 }
