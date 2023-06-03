@@ -44,11 +44,14 @@ final class ResultViewController: UIViewController {
             }
         }
         
-        let sortedAnimalCount = animalCount.sorted { $0.value > $1.value }
-
-        if let animal = sortedAnimalCount.first?.key {
-            resultEmodjiLabel.text = ("Вы - \(animal.rawValue)")
-            resultLabel.text = animal.definition
-        }
+        let sortedAnimalCount = animalCount.max { $0.value > $1.value }
+        guard let animal = sortedAnimalCount?.key else { return }
+        
+        updateUI(with: animal)
+    }
+    
+    private func updateUI(with animal: Animal) {
+        resultEmodjiLabel.text = ("Вы - \(animal.rawValue)!")
+        resultLabel.text = animal.definition
     }
 }
